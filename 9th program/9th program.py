@@ -10,6 +10,7 @@ for i in range(len(iris_dataset.target_names)):
 
 print("\n IRIS DATA :\n",iris_dataset["data"])
 
+
 X_train, X_test, y_train, y_test = train_test_split(iris_dataset["data"], iris_dataset["target"], random_state=0)
 
 print("\n Target :\n",iris_dataset["target"])

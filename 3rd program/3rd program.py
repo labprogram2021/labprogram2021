@@ -1,6 +1,7 @@
 import math
 import csv
 
+
 def load_csv(filename):
     lines=csv.reader(open(filename,"r"));
     dataset = list(lines)

@@ -2,7 +2,6 @@ import numpy as np
 from bokeh.plotting import figure, show, output_notebook
 from bokeh.layouts import gridplot
 from bokeh.io import push_notebook
-
 #output_notebook()
 import numpy as np
 

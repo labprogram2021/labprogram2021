@@ -2,6 +2,7 @@ from sklearn.datasets import fetch_20newsgroups
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import numpy as np
+
 twenty_train = fetch_20newsgroups(subset='train', shuffle=True)
 x = len(twenty_train.target_names)
 print("\n The number of categories:",x)

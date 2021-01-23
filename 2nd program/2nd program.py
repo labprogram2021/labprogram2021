@@ -3,6 +3,7 @@ import csv
 def g_0(n):
     return ("?",)*n
 
+
 def s_0(n):
     return ('ɸ',)*n
 def more_general(h1, h2):

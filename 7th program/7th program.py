@@ -8,6 +8,7 @@ import pandas as pd
 import pgmpy
 import sys
 
+
 Cleveland_data_URL = 'http://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.hungarian.data'
 np.set_printoptions(threshold=sys.maxsize)
 names = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'heartdisease']

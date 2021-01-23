@@ -5,7 +5,8 @@ import sklearn.metrics as sm
 import pandas as pd
 import numpy as np
 l1 = [0,1,2]
-
+ 
+ 
 def rename(s):
 	l2 = []
 	for i in s:
