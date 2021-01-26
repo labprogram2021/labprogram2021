@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<input type="text" id="inputv"></input>
+<button type="submit" onclick="action()" >Submit</button>
+<p id="output"></p>
+</center>
+<script>
+function action(){
+var input=document.getElementById("inputv").value;
+var par=document.getElementById("output");
+
+if(isNaN(input))
+{
+let index=istharevoele(input);
+if(index!=-1)
+{
+par.innerHTML="Poistion :"+(index+1);
+}
+else{
+par.innerHTML=" no vowle in the text"
+}
+}
+else{
+par.innerHTML=reversint(input);
+}
+}
+
+function istharevoele(input){
+input = input.toLowerCase();
+var i;
+for(i=0;i<input.length;i++){
+if(input[i]=='a' ||input[i]=='e'||input[i]=='i' ||input[i]=='o'||input[i]=='u' ){
+return i;
+}
+}
+return -1
+}
+
+function reversint(input){
+return(input.split("").reverse().join(""));
+}
+</script>
+ </body>
+ </html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body><center>
+<p id='id1' }></p>
+</center>
+<script>
+
+var text=document.getElementById("id1")
+var font=5;
+var flag=0;
+function inc()
+{
+font=font+5;
+text.style.fontSize=font;
+text.style.color="red";
+text.innerHTML="TEXT-GROWING";
+if(font===50)
+flag=1;
+}
+
+function dec()
+{
+font=font-5;
+text.style.fontSize=font;
+text.style.color="blue";
+text.innerHTML="TEXT-SHRINKING";
+if(font===5)
+flag=0;
+}
+
+var time=setInterval(function(){
+flag===1 ? dec() :inc()
+},100);
+
+</script>
+</body>
+</html>
+
+
+
+
